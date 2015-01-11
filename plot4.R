@@ -20,7 +20,7 @@ lines(power.feb$DateTime, power.feb$Sub_metering_2, col="red")
 lines(power.feb$DateTime, power.feb$Sub_metering_3, col="blue")
 
 legends.met=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
-legend("topright", lty=1, lwd=1, col = c("black", "blue", "red"), legend = legends.met, cex=0.5, bty="n")
+legend("topright", lty=1, lwd=1, col = c("black", "blue", "red"), legend = legends.met, cex=0.35, bty="n")
 
 plot(power.feb$DateTime, power.feb$Global_reactive_power, type ='l', xlab="datetime", ylab="Global_reactive_power")
 dev.copy(png, file = "plot4.png", width = 480, height = 480)
